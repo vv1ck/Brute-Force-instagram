@@ -36,7 +36,7 @@ pip install requests
 - Then run the tool :
 <!--START_SECTION:waka-->
 ```
-python3 Brute-force-insta.py
+python3 Brute-nsta-pc.py
 ```
 <!--END_SECTION:waka-->
 ---------------------
