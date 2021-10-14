@@ -9,31 +9,38 @@ Tool features :
 - • 1- You put the target user name and the tool makes passwords and guesses them
 - • 2- The tool generates and guesses random usernames and passwords
 - Uses proxies (http/s)
+- fishing place:
+- • The good in the file
+- • Banned in the file
+- • secure in file
+- Support all devices
 -----------------------
 install in kali linux :
 <!--START_SECTION:waka-->
 ```
-sudo git clone https://github.com/vv1ck/Brute-force-Tiktok
+sudo git clone https://github.com/vv1ck/Brute-Force-instagram
 ```
 <!--END_SECTION:waka-->
 <!--START_SECTION:waka-->
 ```
-cd Brute-force-Tiktok
+cd Brute-Force-instagram
 ```
 <!--END_SECTION:waka-->
 -----------------------
-How do I operate the tool? :
-- Now that we have downloaded it and opened the tool folder, put the combo file in the same folder
-- After this, run the tool as follows :
+You need to download the requests library if you don't have it :
 <!--START_SECTION:waka-->
 ```
-python3 start.py
+pip install requests
 ```
 <!--END_SECTION:waka-->
-- Now enter the type of your device, if it is a phone, put the number 2, if it is a computer, put the number 1
-- Then enter the name of the combo list file and press enter
+- Then run the tool :
+<!--START_SECTION:waka-->
+```
+python3 Brute-force-insta.py
+```
+<!--END_SECTION:waka-->
 ---------------------
-- Note: The combo is a file that contains a group of accounts combined with passwords [username:password]
+- Note: Do not forget to put the proxy file in the same folder as the tool, and if you are going to use the combo system, also put the combo file in the same folder
 ---------------------
 By JOKER | <a class="" href="https://www.snapchat.com/add/jokermr5oos4800?">Snapchat 👻</a> | <a class="" href="http://t.me/vv1ck">telegram 🔷</a> | <a class="" href="http://t.me/TweakPY">telegram 2 🔷</a>
 -
