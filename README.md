@@ -3,16 +3,18 @@
 Guess the password for Instgram accounts
 - 
 Tool features :
-- It has two modes:
-- 1- Combo system from you
-- 2- Automatic (random) system with two modes:
-- • 1- You put the target user name and the tool makes passwords and guesses them
-- • 2- The tool generates and guesses random usernames and passwords
+- It has 5 mods:
+- 1- Check combolist username:password
+- 2- Checking for list passwords on one user
+- 3- (Random check) you put list passwords and the tool checks them on random users from there (you choose the length of the user (quadruple / triple / binary)
+- 4- (Random Check 2) Same as No. 3, but here your put one password not  combolist,(Its purpose, it is possible that the password you set is linked to one of the accounts that are checked by the tool)
+- 5- (Auto Check) You don't need usernames or passwords, the tool creates all that automatically, you just have to specify the length of the username
 - Uses proxies (http/s)
 - fishing place:
 - • The good in the file
 - • Banned in the file
 - • secure in file
+- In the event that the tool finds a good account, it will withdraw the cookies and put it in the file with the account information, so that if you hit Secure, you can enter the account through the cookies + withdraw the email and the number to the account
 - Support all devices
 -----------------------
 install in kali linux :
@@ -42,6 +44,6 @@ python3 Brute-nsta.py
 ---------------------
 - Note: Do not forget to put the proxy file in the same folder as the tool, and if you are going to use the combo system, also put the combo file in the same folder
 ---------------------
-By JOKER | <a class="" href="https://www.snapchat.com/add/jokermr5oos4800?">Snapchat 👻</a> | <a class="" href="http://t.me/vv1ck">telegram 🔷</a> | <a class="" href="http://t.me/TweakPY">telegram 2 🔷</a>
+By JOKER | <a class="" href="https://www.snapchat.com/add/j0k.y?">Snapchat 👻</a> | <a class="" href="http://t.me/vv1ck">telegram 🔷</a> | <a class="" href="http://t.me/TweakPY">telegram 2 🔷</a>
 -
 seee
