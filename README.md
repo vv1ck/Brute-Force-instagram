@@ -1,5 +1,5 @@
 # Brute-Force-instagram
-<img src="/insta.png"></img>
+<img src="/ig.png"></img>
 Guess the password for Instgram accounts
 - 
 Tool features :
