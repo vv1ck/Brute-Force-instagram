@@ -9,7 +9,7 @@ Tool features :
 - 3- (Random check) you put list passwords and the tool checks them on random users from there (you choose the length of the user (quadruple / triple / binary)
 - 4- (Random Check 2) Same as No. 3, but here your put one password not  combolist,(Its purpose, it is possible that the password you set is linked to one of the accounts that are checked by the tool)
 - 5- (Auto Check) You don't need usernames or passwords, the tool creates all that automatically, you just have to specify the length of the username
-- Uses proxies (http/s)
+- Uses proxies (http/s and socks4/5)
 - fishing place:
 - • The good in the file
 - • Banned in the file
